@@ -1,0 +1,21 @@
+title: How to start with using Maps SDK for Android
+tagline: android maps sdk
+description: Start using TomTom Maps SDK for Android
+
+template:
+  name:     lab-tomtom-maps-sdk-android
+  repo:     maps-sdk-for-android-template
+
+before:
+- type: createIssue
+  title: Prepare working environment
+  body: 1_prepare_working_environment.md
+
+steps:
+- title: Prepare working environment
+  description: Before your start you need to prepare your working environment
+  event: issues
+  link: '{{ repoUrl }}/issues/1'
+  actions:
+  - type: closeIssue
+    issue: 1
