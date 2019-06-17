@@ -19,9 +19,9 @@ steps:
   actions:
   - type: closeIssue
     issue: 1
-  # - type: respond
-  #   with: 1_prepare_working_environment_response.md
-  #   issue: 1
+  - type: respond
+    with: 1_prepare_working_environment_response.md
+    issue: 1
   # - type: createIssue
   #   title: Install dependencies
   #   body: 2_install_dependencies.md
