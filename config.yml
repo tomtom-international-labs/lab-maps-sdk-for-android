@@ -3,8 +3,8 @@ tagline: android maps sdk
 description: Start using TomTom Maps SDK for Android
 
 template:
-  name:     lab-tomtom-maps-sdk-android
-  repo:     maps-sdk-for-android-template
+  name: lab-tomtom-maps-sdk-android
+  repo: maps-sdk-for-android-template
 
 before:
 - type: createIssue
@@ -19,3 +19,20 @@ steps:
   actions:
   - type: closeIssue
     issue: 1
+  - type: respond
+    with: 1_prepare_working_environment_response.md
+    issue: 1
+  - type: createIssue
+    title: Install dependencies
+    body: 2_install_dependencies.md
+
+- title: Install dependencies
+  description: Install all required dependencies
+  event: issues
+  link: '{{ repoUrl }}/issues/2'
+  actions:
+  - type: closeIssue
+    issue: 2
+  - type: respond
+    with: 2_install_dependencies_response.md
+    title: Well done
