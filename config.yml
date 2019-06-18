@@ -1,12 +1,8 @@
 title: How to start with using TomTom Maps SDK for Android
 tagline: TomTom Maps SDK for Android for Beginners
 
-# Description in text window
 description:
-  Start using TomTom Maps SDK for Android
-
-  All information about TomTom Maps SDK for Android can be found in
-  https://developer.tomtom.com/maps-sdk-android
+  to start using TomTom Maps SDK for Android
 
 template:
   name: lab-tomtom-maps-sdk-android
