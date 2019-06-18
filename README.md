@@ -1,5 +1,6 @@
-# maps-sdk-for-android
+# TomTom Maps SDK for Android
 
-Learning Lab for using maps sdk for Android
+![](https://raw.githubusercontent.com/tomtom-international-labs/maps-sdk-for-android/master/assets/tomtom.png)
+Learning Lab for using TomTom Maps SDK for Android
 
-This is a longer description text
+More details can be found in https://developer.tomtom.com/maps-sdk-android.
