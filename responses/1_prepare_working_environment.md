@@ -1,9 +1,36 @@
-TomTom Lab: Maps SDK for Android.
+# TomTom Lab: Maps SDK for Android.
 
 Welcome to the TomTom Lab.
 
-In order to prepare your working environment please complete the following steps.
+## Online documentation
 
-[LIST OF STEPS]
+All information about TomTom Maps SDK for Android can be found in
+https://developer.tomtom.com/maps-sdk-android
+
+## Get the pre-requisites in place:
+Android Studio IDE installed (Android Studio)
+
+Set up the application minimum API level to Android 4.4 "Jelly Bean" (API Level 16) or higher
+
+Set up your project like this:
+Open Android Studio IDE
+
+## Create a new project or open an existing one
+
+Add repositories to all projects to root/build.gradle:
+`
+allprojects {
+
+   repositories {
+      jcenter()
+      google()
+      maven {
+         url 'https://maven.tomtom.com:8443/nexus/content/repositories/releases/'
+      }
+   }   
+}
+`
+
+## Continue to the next step
 
 Close this issue to proceed to the next step.
