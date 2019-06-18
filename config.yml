@@ -7,32 +7,38 @@ template:
   repo: maps-sdk-for-android-template
 
 before:
-- type: createIssue
-  title: Prepare working environment
-  body: 1_prepare_working_environment.md
-- type: createIssue
-  title: Install dependencies
-  body: 2_install_dependencies.md
+  - type: createIssue
+    title: Prepare working environment
+    body: 1_prepare_working_environment.md
+  - type: createIssue
+    title: Install dependencies
+    body: 2_install_dependencies.md
 
 steps:
-- title: Introduction and pre-requisites
-  description: To develop your own application with Maps SDK, you need to make sure that the pre-requisites are in place and that you have added Maps SDK  as a dependency into your project. Follow the steps below and then you are ready to code!
-  event: issues
-  link: '{{ repoUrl }}/issues/1'
-  actions:
-  - type: closeIssue
-    issue: 1
-  - type: respond
-    with: 1_prepare_working_environment_response.md
-    issue: 1
+  - title: Introduction and pre-requisites
+    description: To develop your own application with Maps SDK, you need to make sure that the pre-requisites are in place and that you have added Maps SDK  as a dependency into your project. Follow the steps below and then you are ready to code!
+    event: issues
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+    - type: respond
+      with: 1_prepare_working_environment_response.md
+      issue: 1
 
-# - title: Install dependencies
-#   description: Install all required dependencies
-#   event: issues
-#   link: '{{ repoUrl }}/issues/2'
-#   actions:
-#   - type: closeIssue
-#     issue: 2
-#   - type: respond
-#     with: 2_install_dependencies_response.md
-#     title: Well done
+  - title: Install dependencies
+    description: Install all required dependencies
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+    - type: respond
+      with: 1_prepare_working_environment_response.md
+      issue: 1
+  #
+  #
+  # - title: Implement ABC
+  #   description: Implement description
+  #   event: issues.closed
+  #   link: '{{ repoUrl }}/issues/2'
+  #   actions:
+  #   - type: respond
+  #     with: 2_install_dependencies_response.md
+  #     title: Well done

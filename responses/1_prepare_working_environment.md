@@ -18,7 +18,7 @@ Open Android Studio IDE
 ## Create a new project or open an existing one
 
 Add repositories to all projects to root/build.gradle:
-`
+```
 allprojects {
 
    repositories {
@@ -29,7 +29,7 @@ allprojects {
       }
    }   
 }
-`
+```
 
 ## Continue to the next step
 
