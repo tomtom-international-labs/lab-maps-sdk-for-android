@@ -10,31 +10,48 @@ template:
 
 before:
   - type: createIssue
+    title: Introduuction
+    body: 1_introduction.md
+  - type: createIssue
     title: Prepare working environment
-    body: 1_prepare_working_environment.md
+    body: 2_prepare_working_environment.md
   - type: createIssue
     title: Install dependencies
-    body: 2_install_dependencies.md
+    body: 3_install_dependencies.md
 
 steps:
-  - title: Introduction and pre-requisites
-    description: To develop your own application with Maps SDK, you need to make sure that the pre-requisites are in place and that you have added Maps SDK  as a dependency into your project. Follow the steps below and then you are ready to code!
+  - title: Introduction - Step 1
+    description: Get familiar with the course and learn how TomTom GitHub Learning Labs work.
     event: issues
     link: '{{ repoUrl }}/issues/1'
     actions:
     - type: respond
-      with: 1_prepare_working_environment_response.md
+      with: bot_autoresponse.md
       issue: 1
 
-  - title: Install dependencies
-    description: Install all required dependencies
+  - title: Pre-requisites - Step 2
+    description: To develop your own application with Maps SDK, you need to make sure that the pre-requisites are in place and that you have added Maps SDK  as a dependency into your project. Follow the steps below and then you are ready to code!
     event: issues.closed
     link: '{{ repoUrl }}/issues/1'
     actions:
     - type: respond
-      with: 1_prepare_working_environment_response.md
+      with: 2_init.md
       issue: 1
-  #
+    - type: respond
+      with: bot_autoresponse.md
+      issue: 2
+
+  - title: Install dependencies - Step 3
+    description: Install all required dependencies
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+    - type: respond
+      with: 3_init.md
+      issue: 2
+    - type: respond
+      with: bot_autoresponse.md
+      issue: 3
   #
   # - title: Implement ABC
   #   description: Implement description

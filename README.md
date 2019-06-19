@@ -1,4 +1,6 @@
-# ![](https://raw.githubusercontent.com/tomtom-international-labs/maps-sdk-for-android/master/assets/tomtom.png) Maps SDK for Android
+![](https://raw.githubusercontent.com/tomtom-international-labs/maps-sdk-for-android/master/assets/tomtom.png)
+
+# Maps SDK for Android
 
 Learning Lab for using TomTom Maps SDK for Android
 
