@@ -88,5 +88,5 @@ steps:
     link: '{{ repoUrl }}/issues/4'
     actions:
     - type: respond
-      with: 5_congratulations
+      with: 5_congratulations.md
       issue: 4
