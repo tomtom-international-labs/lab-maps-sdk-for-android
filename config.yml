@@ -15,15 +15,33 @@ before:
   - type: createIssue
     title: Prepare working environment
     body: 2_prepare_working_environment.md
+  - type: respond
+    with: bot_continue.md
+    issue: 2
+  - type: respond
+    with: bot_autoresponse.md
+    issue: 2
   - type: createIssue
     title: Configure SDK
     body: 3_configure_sdk.md
+  - type: respond
+    with: bot_continue.md
+    issue: 3
+  - type: respond
+    with: bot_autoresponse.md
+    issue: 3
   - type: createIssue
     title: Troubleshooting
     body: 4_troubleshooting.md
+  - type: respond
+    with: bot_continue.md
+    issue: 4
+  - type: respond
+    with: bot_autoresponse.md
+    issue: 4
 
 steps:
-  # Step 1
+  # Step 1 - Issue 1
   - title: Introduction
     description: Get familiar with the course and learn how TomTom GitHub Learning Labs work.
     event: issues
@@ -33,7 +51,7 @@ steps:
       with: bot_autoresponse.md
       issue: 1
 
- # Step 2
+ # Step 2 - Issue 2
   - title: Pre-requisites
     description: To develop your own application with Maps SDK, you need to make sure that the pre-requisites are in place and that you have added Maps SDK  as a dependency into your project. Follow the steps below and then you are ready to code!
     event: issues.closed
@@ -42,14 +60,8 @@ steps:
     - type: respond
       with: 2_init.md
       issue: 1
-    - type: respond
-      with: bot_continue.md
-      issue: 2
-    - type: respond
-      with: bot_autoresponse.md
-      issue: 2
 
-  # Step 3
+  # Step 3 - Issue 3
   - title: Configure SDK
     description: Configure SDK within your new project
     event: issues.closed
@@ -58,14 +70,8 @@ steps:
     - type: respond
       with: 3_init.md
       issue: 2
-    - type: respond
-      with: bot_continue.md
-      issue: 3
-    - type: respond
-      with: bot_autoresponse.md
-      issue: 3
 
-  # Step 4
+  # Step 4 - Issue 4
   - title: Troubleshooting
     description: Depending on your project configuration, some dependency conflicts may occur when adding Maps SDK modules.
     event: issues.closed
@@ -74,14 +80,8 @@ steps:
     - type: respond
       with: 4_init.md
       issue: 3
-    - type: respond
-      with: bot_continue.md
-      issue: 4
-    - type: respond
-      with: bot_autoresponse.md
-      issue: 4
 
-  # Step 4
+  # Step 5 - Congratulations
   - title: Congratulations
     description: Go and explore other TomTom GitHub Learning Labs and SDK's.
     event: issues.closed
@@ -89,4 +89,4 @@ steps:
     actions:
     - type: respond
       with: 5_congratulations
-      issue: 4      
+      issue: 4
