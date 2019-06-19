@@ -1,4 +1,4 @@
-# Introduction
+# TomTom Lab: Maps SDK for Android - Introduction
 
 ## Guide to GitHub Learning Labs
 

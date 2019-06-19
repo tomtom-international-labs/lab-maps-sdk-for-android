@@ -1,3 +1,3 @@
 Well done!
 
-Go back to the Learning Lab '{{ repoUrl }}'.
+Please proceed to the next step '{{ repoUrl }}/issues/4'.

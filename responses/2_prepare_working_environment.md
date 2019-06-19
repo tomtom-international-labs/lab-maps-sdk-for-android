@@ -1,4 +1,4 @@
-# TomTom Lab: Maps SDK for Android.
+# TomTom Lab: Maps SDK for Android
 
 Welcome to the TomTom Lab.
 
@@ -16,7 +16,7 @@ Set up the application minimum API level to Android 4.4 "Jelly Bean" (API Level 
 Set up your project like this:
 Open Android Studio IDE
 
-## Create a new project or open an existing one
+## ⌨️ Activity: Create a new project or open an existing one
 
 Add repositories to all projects to root/build.gradle:
 ```
@@ -31,7 +31,3 @@ allprojects {
    }   
 }
 ```
-
-## Continue to the next step
-
-Close this issue to proceed to the next step.

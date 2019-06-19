@@ -16,11 +16,15 @@ before:
     title: Prepare working environment
     body: 2_prepare_working_environment.md
   - type: createIssue
-    title: Install dependencies
-    body: 3_install_dependencies.md
+    title: Configure SDK
+    body: 3_configure_sdk.md
+  - type: createIssue
+    title: Troubleshooting
+    body: 4_troubleshooting.md
 
 steps:
-  - title: Introduction - Step 1
+  # Step 1
+  - title: Introduction
     description: Get familiar with the course and learn how TomTom GitHub Learning Labs work.
     event: issues
     link: '{{ repoUrl }}/issues/1'
@@ -29,7 +33,8 @@ steps:
       with: bot_autoresponse.md
       issue: 1
 
-  - title: Pre-requisites - Step 2
+ # Step 2
+  - title: Pre-requisites
     description: To develop your own application with Maps SDK, you need to make sure that the pre-requisites are in place and that you have added Maps SDK  as a dependency into your project. Follow the steps below and then you are ready to code!
     event: issues.closed
     link: '{{ repoUrl }}/issues/1'
@@ -38,11 +43,15 @@ steps:
       with: 2_init.md
       issue: 1
     - type: respond
+      with: bot_continue.md
+      issue: 2
+    - type: respond
       with: bot_autoresponse.md
       issue: 2
 
-  - title: Install dependencies - Step 3
-    description: Install all required dependencies
+  # Step 3
+  - title: Configure SDK
+    description: Configure SDK within your new project
     event: issues.closed
     link: '{{ repoUrl }}/issues/2'
     actions:
@@ -50,14 +59,34 @@ steps:
       with: 3_init.md
       issue: 2
     - type: respond
+      with: bot_continue.md
+      issue: 3
+    - type: respond
       with: bot_autoresponse.md
       issue: 3
-  #
-  # - title: Implement ABC
-  #   description: Implement description
-  #   event: issues.closed
-  #   link: '{{ repoUrl }}/issues/2'
-  #   actions:
-  #   - type: respond
-  #     with: 2_install_dependencies_response.md
-  #     title: Well done
+
+  # Step 4
+  - title: Troubleshooting
+    description: Depending on your project configuration, some dependency conflicts may occur when adding Maps SDK modules.
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/3'
+    actions:
+    - type: respond
+      with: 4_init.md
+      issue: 3
+    - type: respond
+      with: bot_continue.md
+      issue: 4
+    - type: respond
+      with: bot_autoresponse.md
+      issue: 4
+
+  # Step 4
+  - title: Congratulations
+    description: Go and explore other TomTom GitHub Learning Labs and SDK's.
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/4'
+    actions:
+    - type: respond
+      with: 5_congratulations
+      issue: 4      
