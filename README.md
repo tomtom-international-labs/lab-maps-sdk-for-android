@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/tomtom-international-labs/maps-sdk-for-android/master/assets/tomtom.png)
+![TomTom Logo](assets/tomtom.png)
 
 # Maps SDK for Android
 
