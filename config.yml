@@ -1,19 +1,15 @@
 title: How to start with using TomTom Maps SDK for Android
 tagline: TomTom Maps SDK for Android for Beginners
-
-description:
-  to start using TomTom Maps SDK for Android
-
+description: to start using TomTom Maps SDK for Android
 template:
-  name: lab-tomtom-maps-sdk-android
+  name: lab-tomtom-maps-sdk-for-android
   repo: maps-sdk-for-android-template
-
 before:
   - type: createIssue
-    title: Introduuction
+    title: Introduction
     body: 1_introduction.md
   - type: createIssue
-    title: Prepare working environment
+    title: Prepare your working environment
     body: 2_prepare_working_environment.md
   - type: respond
     with: bot_continue.md
@@ -39,54 +35,52 @@ before:
   - type: respond
     with: bot_autoresponse.md
     issue: 4
-
 steps:
-  # Step 1 - Issue 1
   - title: Introduction
-    description: Get familiar with the course and learn how TomTom GitHub Learning Labs work.
+    description: >-
+      Get familiar with the course and learn how TomTom GitHub Learning Labs
+      work.
     event: issues
     link: '{{ repoUrl }}/issues/1'
     actions:
-    - type: respond
-      with: bot_autoresponse.md
-      issue: 1
-
- # Step 2 - Issue 2
+      - type: respond
+        with: bot_autoresponse.md
+        issue: 1
   - title: Pre-requisites
-    description: To develop your own application with Maps SDK, you need to make sure that the pre-requisites are in place and that you have added Maps SDK  as a dependency into your project. Follow the steps below and then you are ready to code!
+    description: >-
+      To develop your own application with Maps SDK, you need to make sure that
+      the pre-requisites are in place and that you have added Maps SDK  as a
+      dependency into your project. Follow the steps below and then you are
+      ready to code!
     event: issues.closed
     link: '{{ repoUrl }}/issues/1'
     actions:
-    - type: respond
-      with: 2_init.md
-      issue: 1
-
-  # Step 3 - Issue 3
+      - type: respond
+        with: 2_init.md
+        issue: 1
   - title: Configure SDK
     description: Configure SDK within your new project
     event: issues.closed
     link: '{{ repoUrl }}/issues/2'
     actions:
-    - type: respond
-      with: 3_init.md
-      issue: 2
-
-  # Step 4 - Issue 4
+      - type: respond
+        with: 3_init.md
+        issue: 2
   - title: Troubleshooting
-    description: Depending on your project configuration, some dependency conflicts may occur when adding Maps SDK modules.
+    description: >-
+      Depending on your project configuration, some dependency conflicts may
+      occur when adding Maps SDK modules.
     event: issues.closed
     link: '{{ repoUrl }}/issues/3'
     actions:
-    - type: respond
-      with: 4_init.md
-      issue: 3
-
-  # Step 5 - Congratulations
+      - type: respond
+        with: 4_init.md
+        issue: 3
   - title: Congratulations
     description: Go and explore other TomTom GitHub Learning Labs and SDK's.
     event: issues.closed
     link: '{{ repoUrl }}/issues/4'
     actions:
-    - type: respond
-      with: 5_congratulations.md
-      issue: 4
+      - type: respond
+        with: 5_congratulations.md
+        issue: 4

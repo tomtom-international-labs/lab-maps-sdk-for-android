@@ -9,6 +9,7 @@ https://developer.tomtom.com/maps-sdk-android
 
 
 ## ⌨️ Activity: Get the pre-requisites in place:
+
 Android Studio IDE installed (Android Studio)
 
 Set up the application minimum API level to Android 4.4 "Jelly Bean" (API Level 16) or higher
